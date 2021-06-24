@@ -19,8 +19,15 @@ font-family: 'Open Sans Condensed', sans-serif;
 .logo-box {
     display: grid;
     position: fixed;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 15px 0 0 15px;
+    margin-left:15px;
+    margin-top: 0;
+    padding:15px 5px 3px 5px;
+    background-color: lightgray;
+    border-radius:0 0 8px 8px;
+}
+.logo-box:hover{
+    cursor: pointer;
+    background-color: rgb(135, 187, 223);
 }
 
 .logo-name {
@@ -37,15 +44,6 @@ font-family: 'Open Sans Condensed', sans-serif;
 .sidenav-social{
     display: grid;
     grid-template-columns: repeat(5, 45px); 
-}
-
-.git {
-}
-
-.twitter {
-}
-
-.linkedin {
 }
 
 .sll {
@@ -113,23 +111,26 @@ font-family: 'Open Sans Condensed', sans-serif;
       display: flex;
       align-self: center;
       justify-self: center;
-      height: 1000px;
-      padding: 40px 0;
+      width: 100vw;
   }
 
-  .about {
+ /* about */
+  
+    .about {
       display: grid;
       grid-template-columns: 30% auto auto;
       height: 540px;
       margin: 0 20px;
-  }
+    }
   
   .about-logo {
-      height: 450px;
+      max-height: 450px;
       padding: 20px;
-      grid-column-start: 2;
+      grid-column-start: 1;
   }
   .about p {
+      display: flex;
+      align-self: center;
       grid-column-start: 3;
   }
 
@@ -147,18 +148,23 @@ font-family: 'Open Sans Condensed', sans-serif;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .title {
         display: flex;
         width: 100%;
-        justify-content: center;     
+        justify-content: center;
+        margin: 0;   
     }
    
     .service-1{
         grid-column-start: 1;
     }
-
+    .title-1 {
+        margin: 0;
+    }
     .service-2 {
       grid-column-start: 2;
       grid-row-start: 2;
@@ -177,4 +183,14 @@ font-family: 'Open Sans Condensed', sans-serif;
     .portfolios {
         background-color: lightgray;
         grid-gap: 20px;
+    }
+    .portfolios a {
+        text-decoration: none;
+        decoration: none;
+    }
+    .portfolios a:visited {
+        color: black;
+    }
+    .footer {
+        height: 1080px;
     }
