@@ -242,9 +242,44 @@ font-family: 'Open Sans Condensed', sans-serif;
 .portfolios a:visited {
     color: black;
 }
+
+/* Footer */
+
 .footer {
-    height: 1080px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+    height: 880px;
     max-width: 1900px;
     padding: 0;
-    margin: 0;        
+    margin: 0; 
+    background-color: rgb(71, 125, 175);
+    border-radius: 8px 8px 0 0;    
+}
+#contact,
+#map {
+  padding-top: 100px;
+}
+
+.contact-info {
+  grid-column-start: 1;
+  display: grid;
+  width: 480;
+  max-height: 200px;
+}
+.contact-info h2,
+.contact-info p{
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-grow: 5;
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+.map {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: center;
 }
